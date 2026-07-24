@@ -29,7 +29,6 @@ for i,n in enumerate(my_tuple,start=0):
 
 print("The number of time 20 appear in tuple:",cout)
 print("The number of time 20 appear in tuple:",c)
-"""
 
 #packing and unpacking in tuple
 intern = ("Romaan", 25, "Backend-itern", "Raiwind" , "Grayphite")
@@ -45,4 +44,17 @@ name,age,*info= intern
 print("The name is: ",name)
 print("The age is: ",age)
 print("The Role , location adn Company is: ",info)
+"""
+#implement the tuple in functions to check the beviour of return more than 1 value as an object from function in tuple
+
+def divide(a,b):
+    q = a//b
+    r = a%b
+    return q,r
+x=int(input("Enter the first number:"))
+y=int(input("Enter the second number:"))
+quiotent , reminder= divide(x,y)
+print("The quiotent is:",quiotent)34
+print("The reminder is:",reminder)
+
 
