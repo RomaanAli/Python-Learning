@@ -1,6 +1,6 @@
 #loop practice in tuple
 from turtledemo.penrose import start
-
+"""
 subjects = ("Math", "Physics", "English", "Programming")
 
 for subject in subjects:
@@ -29,6 +29,20 @@ for i,n in enumerate(my_tuple,start=0):
 
 print("The number of time 20 appear in tuple:",cout)
 print("The number of time 20 appear in tuple:",c)
+"""
 
+#packing and unpacking in tuple
+intern = ("Romaan", 25, "Backend-itern", "Raiwind" , "Grayphite")
+name, age, role, location, company = intern
 
+print("The name is: ",name)
+print("The age is: ",age)
+print("The role is: ",role)
+print("The location is: ",location)
+print("The company is: ",company)
+
+name,age,*info= intern
+print("The name is: ",name)
+print("The age is: ",age)
+print("The Role , location adn Company is: ",info)
 
