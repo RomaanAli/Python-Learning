@@ -54,7 +54,7 @@ def divide(a,b):
 x=int(input("Enter the first number:"))
 y=int(input("Enter the second number:"))
 quiotent , reminder= divide(x,y)
-print("The quiotent is:",quiotent)34
+print("The quiotent is:",quiotent)
 print("The reminder is:",reminder)
 
 
