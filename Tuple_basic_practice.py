@@ -1,4 +1,6 @@
 #loop practice in tuple
+from turtledemo.penrose import start
+
 subjects = ("Math", "Physics", "English", "Programming")
 
 for subject in subjects:
@@ -15,11 +17,14 @@ t = input("Enter the values in tuple separated by space:")
 my_tuple = tuple(map(int,t.split()))
 cout=0
 c=0
-for number in numbers:
+li=[]
+for i,number in enumerate(numbers,start=0):
     if number == 20:
         cout+=1
-for i in my_tuple:
-    if i == 20:
+        li.append(i)
+print(li)
+for i,n in enumerate(my_tuple,start=0):
+    if n == 20:
         c+=1
 
 print("The number of time 20 appear in tuple:",cout)
