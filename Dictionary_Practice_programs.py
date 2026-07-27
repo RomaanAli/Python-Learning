@@ -1,6 +1,6 @@
 #creating a dictornaries with multiple data
 import copy
-
+"""
 student= {
     "name" :"Romaan",
     "age" : 22,
@@ -14,7 +14,7 @@ def display():
     for key,value in student.items():
         print(f"{key}: {value}")
 
-"""
+
 #removing values
 print("deleting value with --id-- pop():",student.pop("marks"))
 display()
@@ -25,7 +25,6 @@ del student["roll_no"]
 display()
 print("deleting value with --id-- clear():",student.clear())
 display()
-"""
 #applying loops on dictionary
 print("For loop with .items both key and value.")
 for key,value in student.items():
@@ -61,3 +60,41 @@ person["siblings"].append(5)
 person2["siblings"].append(10)
 print("After person:",person)
 print("After person2:",person2)
+"""
+
+#nested dictionaries
+students= {
+    "101":{
+    "name":"Romaan",
+    "age":21,
+    "marks":90},
+    "102":{
+    "name":"Hassan",
+    "age":22,
+    "marks":85},
+    "103":{
+    "name":"Talha",
+    "age":25,
+    "marks":70},
+}
+print("The marks of 102 student:",students["102"]["marks"])
+students["101"]["age"]=30
+print("The updated age of 101 student:",students["101"]["age"])
+students["103"].update({"status":"unemployed"})
+print("The updated info 103 student:",students["103"])
+
+#find the student with heighest marks
+
+# find the student with highest marks
+max_value = 0
+for rol, info in students.items():
+    for key, value in info.items():
+        if key == "marks":
+            if max_value < value:
+                max_value = value
+
+print("The heighest marks:",max_value)
+print("-----------------------")
+#deleting the student 102
+del students["102"]
+print(students)
