@@ -1,4 +1,6 @@
 #creating a dictornaries with multiple data
+import copy
+
 student= {
     "name" :"Romaan",
     "age" : 22,
@@ -34,3 +36,28 @@ for key in student.keys():
 #for loop with values:
 for value in student.values():
         print(f"{value}:")
+
+#Copy or deep copy
+person={
+    "name":"Romaan",
+    "age":22,
+    "siblings":[2,1]
+}
+person2 = person.copy()
+print("Before person:",person)
+print("Before person2:",person2)
+person2.update({"status":"unemployed"})
+person["siblings"].append(5)
+print("After person:",person)
+print("After person2:",person2)
+
+print("------------------------")
+
+person2=copy.deepcopy(person)
+print("Before person:",person)
+print("Before person2:",person2)
+person2.update({"status":"unemployed"})
+person["siblings"].append(5)
+person2["siblings"].append(10)
+print("After person:",person)
+print("After person2:",person2)
