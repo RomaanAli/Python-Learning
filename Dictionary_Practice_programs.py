@@ -1,5 +1,6 @@
-#creating a dictornaries with multiple data
+# creating a dictornaries with multiple data
 import copy
+
 """
 student= {
     "name" :"Romaan",
@@ -60,7 +61,6 @@ person["siblings"].append(5)
 person2["siblings"].append(10)
 print("After person:",person)
 print("After person2:",person2)
-"""
 
 #nested dictionaries
 students= {
@@ -98,3 +98,36 @@ print("-----------------------")
 #deleting the student 102
 del students["102"]
 print(students)
+"""
+students = {
+    101: {
+        "name": "Romaan",
+        "age": "22",
+        "roll_no": "105",
+    }
+
+}
+# taking user input
+num =int(input("Enter the number of students: "))
+for i in range(num):
+    print("----Enter Student details----")
+
+    student_id = int(input("Enter unique student ID(as 101): "))
+
+    na = input("Enter name of student:")
+    ag = input("Enter age of student:")
+    rol = input("Enter roll no of student:")
+
+    students[student_id]={
+        "name":na,
+        "age":ag,
+        "roll_no":rol,
+    }
+
+for x,info in students.items():
+    print("-------------------")
+    print(x)
+    for key, value in info.items():
+        print(f"{key}: {value}")
+
+
