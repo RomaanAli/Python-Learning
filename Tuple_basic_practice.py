@@ -1,6 +1,4 @@
 #loop practice in tuple
-from turtledemo.penrose import start
-"""
 subjects = ("Math", "Physics", "English", "Programming")
 
 for subject in subjects:
@@ -44,7 +42,7 @@ name,age,*info= intern
 print("The name is: ",name)
 print("The age is: ",age)
 print("The Role , location adn Company is: ",info)
-"""
+
 #implement the tuple in functions to check the beviour of return more than 1 value as an object from function in tuple
 
 def divide(a,b):
