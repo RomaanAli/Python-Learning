@@ -40,3 +40,13 @@ if x==rev:
     print("Is palindrome")
 else:
     print("Is Not palindrome")
+
+
+txt=input("Enter a string:")
+cont={}
+for i in txt:
+    if i in cont:
+        cont[i]+=1
+    else:
+        cont[i]=1
+print(cont)
