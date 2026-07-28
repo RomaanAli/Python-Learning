@@ -28,3 +28,15 @@ for index, ch in enumerate(word):
     print(f"{index}: {ch}")
 
 
+x =input("Enter a string:")
+print("-----With Slicing----- ")
+if x==x[::-1]:
+    print("Is palindrome")
+else:
+    print("IS not a palindrome")
+print("-----With reverse method----- ")
+rev="".join(reversed(x))
+if x==rev:
+    print("Is palindrome")
+else:
+    print("Is Not palindrome")
