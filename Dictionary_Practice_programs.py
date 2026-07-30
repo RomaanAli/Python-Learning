@@ -1,7 +1,5 @@
 # creating a dictornaries with multiple data
 import copy
-
-"""
 student= {
     "name" :"Romaan",
     "age" : 22,
@@ -98,7 +96,7 @@ print("-----------------------")
 #deleting the student 102
 del students["102"]
 print(students)
-"""
+
 students = {
     101: {
         "name": "Romaan",

@@ -33,3 +33,6 @@ b={1,2,3,4}
 print(a.isdisjoint(b))
 print(a.issuperset(b))
 print(b.issubset(a))
+
+fs=frozenset({1,2,3,4})
+print(fs)
