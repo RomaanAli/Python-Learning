@@ -69,3 +69,51 @@ obj = D()
 print(D.mro())
 
 obj.show()
+print("----------------------")
+
+
+def info():
+    print("Person")
+
+
+class Person:
+
+    name="namePerson"
+    age=30
+    def __init__(self,name,age):
+        self.name = name
+        self.age = age
+
+    def set_name(self, newname):
+        self.name = newname
+    def get_name(self):
+        return self.name
+    def set_age(self, newage):
+        self.age = newage
+    def get_age(self):
+        return self.age
+
+
+class Employee(Person):
+
+    def work(self):
+        print("Working")
+
+class Student(Person):
+
+    def study(self):
+        print("Studying")
+
+
+class TeachingAssistant(Employee, Student):
+        pass
+
+
+ta = TeachingAssistant("Ali",20)
+ta.work()
+ta.study()
+print(TeachingAssistant.mro())
+ta.set_name("Romaan Ali")
+ta.set_age(23)
+print("the name access from child to the grandparent person:",ta.get_name())
+print("the AGE access from person:",ta.get_age())
