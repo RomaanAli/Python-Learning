@@ -80,7 +80,7 @@ class Person:
 
     name="namePerson"
     age=30
-    def __init__(self,name,age):
+    def __init__(self,name="Hammad",age=26):
         self.name = name
         self.age = age
 
@@ -108,8 +108,7 @@ class Student(Person):
 class TeachingAssistant(Employee, Student):
         pass
 
-
-ta = TeachingAssistant("Ali",20)
+ta = TeachingAssistant()
 ta.work()
 ta.study()
 print(TeachingAssistant.mro())
