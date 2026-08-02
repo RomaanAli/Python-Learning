@@ -24,3 +24,37 @@ triple = multiply_by(3)
 
 print(double(5))
 print(triple(5))
+
+def counter():
+    count = 0
+
+    def increment():
+        nonlocal count
+        count += 1
+        return count
+
+    return increment
+
+c = counter()
+
+print(c())
+print(c())
+print(c())
+
+def decorator(func):
+
+    def wrapper(*args, **kwargs):
+
+        print("Before")
+
+        func(*args, **kwargs)
+
+        print("After")
+
+    return wrapper
+
+@decorator
+def add(a, b):
+    print(a + b)
+
+add(5, 6)
