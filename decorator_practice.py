@@ -58,3 +58,27 @@ def add(a, b):
     print(a + b)
 
 add(5, 6)
+
+from functools import wraps
+
+def logger(func):
+
+    @wraps(func)
+    def wrapper(*args, **kwargs):
+
+        print(f"Calling {func.__name__}")
+
+        result = func(*args, **kwargs)
+
+        print(f"{func.__name__} --------Finished---------")
+
+        return result
+
+    return wrapper
+
+
+@logger
+def hello():
+    print("Hello")
+
+hello()
