@@ -1,4 +1,4 @@
-word = "Programming"
+"""word = "Programming"
 print(word[0])
 print(word[-1])
 print(word[3:])
@@ -105,3 +105,22 @@ s =input("Enter a string:")
 s=s.title()
 print(s)
 
+s="hello word"
+ch_dict={}
+for ch in s:
+    freq=s.count(ch)
+    ch_dict[ch]=freq
+print(ch_dict)
+lst= list(ch_dict.keys())
+print(lst[0])
+
+"""
+s = "hello word"
+
+ch_dict = {}
+for ch in s:
+    ch_dict[ch] = ch_dict.get(ch, 0) + 1
+
+print(ch_dict)
+lst = list(ch_dict.keys())
+print(lst[0])
