@@ -50,3 +50,58 @@ for i in txt:
     else:
         cont[i]=1
 print(cont)
+
+
+#Find all duplicate characters.
+s = input("Enter the string:")
+c=[]
+for ch in s:
+    if ch in c:
+        continue
+    else:
+        c.append(ch)
+print("first non-Repeating characters:",c[0])
+
+
+s = input("Enter the string:")
+c = list(dict.fromkeys(s))
+print(c)
+print("Non-Repeating characters:", c[0])
+
+print("----- check Anagram ------")
+s1=input("Enter first string:")
+s2=input("Enter second string:")
+s1="".join(sorted(s1.lower()))
+s2="".join(sorted(s2.lower()))
+if len(s1)==len(s2) and s1==s2:
+    print("Is Anagram")
+else:
+    print("Is not Anagram")
+
+s= input("Enter a string:")
+s=s.split()
+long=len(s[0])
+sml=len(s[0])
+word=""
+sword=""
+for i in s:
+    if long <= len(i):
+        long=len(i)
+        word=i
+    if sml >= len(i):
+        sml=len(i)
+        sword=i
+print(f"the longest word is *{word}* and the length is: {long}")
+print(f"the shortest word is *{sword}* and the length is: {sml}")
+print("The number of words in the sentence are:",len(s))
+
+
+s1 = input("Enter a string:")
+n=" ".join(s1.split())
+print(n)
+# Output: "Hello world! This is a test."
+
+s =input("Enter a string:")
+s=s.title()
+print(s)
+
