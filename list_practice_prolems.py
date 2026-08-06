@@ -64,7 +64,7 @@ for i in l1:
         common.append(i)
 common.sort()
 print("The common elements in both list are:",common)
-"""
+
 l1=list_get()
 pairs=[]
 target=int(input("Enter the target number:"))
@@ -75,5 +75,18 @@ for i in l1:
             pairs.append(pair)
 
 print(pairs)
-
-
+"""
+l1=list_get()
+zeros=[]
+nonzero=[]
+zero=0
+print(l1)
+for i in l1:
+    if i == 0:
+        zeros.append(i)
+        zero += 1
+    else:
+        nonzero.append(i)
+l1=nonzero+zeros
+print("The number of zeros are:",zero)
+print("the 0 goes to at the end:",l1)
