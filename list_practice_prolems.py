@@ -50,7 +50,6 @@ for i in new:
         missing.append(i)
 missing.sort()
 print("missing values are:",missing)
-"""
 
 l1=list_get()
 print(l1)
@@ -65,3 +64,16 @@ for i in l1:
         common.append(i)
 common.sort()
 print("The common elements in both list are:",common)
+"""
+l1=list_get()
+pairs=[]
+target=int(input("Enter the target number:"))
+for i in l1:
+    for j in l1:
+        if target==i+j:
+            pair=(i,j)
+            pairs.append(pair)
+
+print(pairs)
+
+
