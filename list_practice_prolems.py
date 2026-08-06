@@ -1,8 +1,8 @@
-li = []
 def list_get():
+    li=[]
     for i in range(int(input("Enter how many numbers you want to enter:"))):
         li.append(int(input("Enter a number:")))
-    print(li)
+    return li
 """li=[10,20,30,40,50]
 avg=sum(li)/len(li)
 print(int(avg))
@@ -39,7 +39,6 @@ for i,num in enumerate(li):
 print(f"the first occurrence is {ind[0]} and the last occurrence is {ind[-1]}")
 print(f"These are all index where {f} occurs:",ind)
 
-"""
 new=[]
 missing=[]
 list_get()
@@ -51,5 +50,18 @@ for i in new:
         missing.append(i)
 missing.sort()
 print("missing values are:",missing)
+"""
 
-
+l1=list_get()
+print(l1)
+l2=list_get()
+print(l2)
+l3=l1+l2
+l3.sort()
+print("The merge of these list are:",l3)
+common=[]
+for i in l1:
+    if i in l2:
+        common.append(i)
+common.sort()
+print("The common elements in both list are:",common)
