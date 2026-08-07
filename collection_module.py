@@ -9,6 +9,15 @@ def highest_frequency(s1):
             max_char=char
     return max_char
 
+def check_anagram(s1,s2):
+    return Counter(s1)==Counter(s2)
+
+def extra_character(s1,s2):
+    if len(Counter(s1))>len(Counter(s2)):
+        return Counter(s1)-Counter(s2)
+    else:
+        return Counter(s2)-Counter(s1)
+
 s="aabbcdde"
 non_rep=[]
 ctr=Counter(s)
@@ -31,8 +40,13 @@ print(non_rep)
 sr="Mississippi"
 print(highest_frequency(sr))
 
+#checking anagram
+s1="Mississippi"
+s2="Mississippi"
+print(check_anagram(s1,s2))
 
-
-
+s1="mississippiioo"
+s2="mississippi"
+print(extra_character(s1,s2))
 
 
