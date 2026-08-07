@@ -18,6 +18,15 @@ def extra_character(s1,s2):
     else:
         return Counter(s2)-Counter(s1)
 
+def odd_frequency(s):
+    odd={}
+    ctr=Counter(s)
+    for i,val in ctr.items():
+        if val%2 != 0:
+            odd.update({i:val})
+    return odd
+
+
 s="aabbcdde"
 non_rep=[]
 ctr=Counter(s)
@@ -45,8 +54,13 @@ s1="Mississippi"
 s2="Mississippi"
 print(check_anagram(s1,s2))
 
-s1="mississippiioo"
-s2="mississippi"
+#checking extra elements
+s1="clothes"
+s2="cloth"
 print(extra_character(s1,s2))
+
+#odd frequency elements
+print(odd_frequency(s1))
+print(odd_frequency(s2))
 
 
