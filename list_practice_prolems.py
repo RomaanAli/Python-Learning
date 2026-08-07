@@ -75,7 +75,7 @@ for i in l1:
             pairs.append(pair)
 
 print(pairs)
-"""
+
 l1=list_get()
 zeros=[]
 nonzero=[]
@@ -90,3 +90,12 @@ for i in l1:
 l1=nonzero+zeros
 print("The number of zeros are:",zero)
 print("the 0 goes to at the end:",l1)
+"""
+
+l=list_get()
+zeros=[]
+nonzero=[]
+[zeros.append(i) if i==0 else nonzero.append(i) for i in l]
+l=nonzero+zeros
+print("new list is",l)
+
