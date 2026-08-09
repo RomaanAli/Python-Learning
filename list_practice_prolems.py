@@ -90,7 +90,7 @@ for i in l1:
 l1=nonzero+zeros
 print("The number of zeros are:",zero)
 print("the 0 goes to at the end:",l1)
-"""
+
 
 l=list_get()
 zeros=[]
@@ -98,4 +98,10 @@ nonzero=[]
 [zeros.append(i) if i==0 else nonzero.append(i) for i in l]
 l=nonzero+zeros
 print("new list is",l)
+"""
+#l=list_get()
+l=[2,3,2,4,2,2,0,2]
+n=int(input("Enter a number to search:"))
+count = sum(1 for i in l if i == n)
+print(f"The ---{n}---  appears {count} times")
 
