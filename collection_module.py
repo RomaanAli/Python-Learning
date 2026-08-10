@@ -1,5 +1,6 @@
 from collections import Counter
 from collections import namedtuple
+from collections import deque
 
 def highest_frequency(s1):
     c = Counter(s1)
@@ -63,7 +64,7 @@ print("checking extra characters-- s1:",s1,"and s2 is: ",s2,"and the ==result: "
 print("odd frequency of s1:",odd_frequency(s1))
 print("odd frequency of s2:",odd_frequency(s2))
 
-print("--------------------------------------")
+print("---------------NamedTuple-----------------------")
 
 ct=Counter("hello world to python programming")
 li=''.join((ct.elements()))
@@ -81,3 +82,20 @@ for i in student:
 print("\nall fields of student object:",student._fields)
 print("\nshowing as dict: ",student._asdict())
 
+print("---------------Deque-----------------------")
+
+numbers=deque([1,2,3,4,5,6,7,8,9,10])
+print(numbers)
+#for i in numbers:
+#    print(i)
+numbers.appendleft(0)
+numbers.appendleft(100)
+numbers.append(200)
+print(numbers)
+print("---removing item----")
+print("using the pop last element:",numbers.pop())
+print("using the popleft() first value:",numbers.popleft())
+print("using the popleft() first value--again:",numbers.popleft())
+
+numbers.rotate(3)
+print(numbers)
