@@ -1,5 +1,4 @@
 from collections import Counter
-from operator import truediv
 
 def highest_frequency(s1):
     c = Counter(s1)
@@ -52,15 +51,22 @@ print(highest_frequency(sr))
 #checking anagram
 s1="Mississippi"
 s2="Mississippi"
-print(check_anagram(s1,s2))
+print("Checking anagram s1 : ",s1,"and s2 is: ",s2," ==result ",check_anagram(s1,s2))
 
 #checking extra elements
 s1="clothes"
 s2="cloth"
-print(extra_character(s1,s2))
+print("checking extra characters-- s1:",s1,"and s2 is: ",s2,"and the ==result: ",extra_character(s1,s2))
 
 #odd frequency elements
-print(odd_frequency(s1))
-print(odd_frequency(s2))
+print("odd frequency of s1:",odd_frequency(s1))
+print("odd frequency of s2:",odd_frequency(s2))
 
+print("--------------------------------------")
+
+ct=Counter("hello world to python programming")
+li=''.join((ct.elements()))
+print(li)
+print("the most common characters with frequency are:",ct.most_common())
+print("The total of count of all values:  ",ct.total())
 
