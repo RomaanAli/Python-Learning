@@ -1,4 +1,5 @@
 from collections import Counter
+from collections import namedtuple
 
 def highest_frequency(s1):
     c = Counter(s1)
@@ -69,4 +70,14 @@ li=''.join((ct.elements()))
 print(li)
 print("the most common characters with frequency are:",ct.most_common())
 print("The total of count of all values:  ",ct.total())
+
+Student=namedtuple("Student",["name","age","department"])
+student= Student("Romaan","23","Software Engineering")
+print(student.name,student.age,student.department)
+name,age,department=student
+print("\nUnpacked the namedtuple:",name,age,department)
+for i in student:
+    print(i)
+print("\nall fields of student object:",student._fields)
+print("\nshowing as dict: ",student._asdict())
 
