@@ -1,0 +1,29 @@
+2026-08-13 10:20:19,187 - DEBUG - This is debug.
+2026-08-13 10:20:19,187 - INFO - This is info.
+2026-08-13 10:20:19,187 - WARNING - This is warning.
+2026-08-13 10:20:19,188 - ERROR - This is error.
+2026-08-13 10:20:19,188 - CRITICAL - This is critical.
+2026-08-13 10:21:03,695 - DEBUG - This is debug.
+2026-08-13 10:21:03,695 - INFO - This is info.
+2026-08-13 10:21:03,696 - WARNING - This is warning.
+2026-08-13 10:21:03,696 - ERROR - This is error.
+2026-08-13 10:21:03,696 - CRITICAL - This is critical.
+2026-08-13 10:21:16,915 - DEBUG - This is debug.
+2026-08-13 10:21:16,915 - INFO - This is info.
+2026-08-13 10:21:16,915 - WARNING - This is warning.
+2026-08-13 10:21:16,915 - ERROR - This is error.
+2026-08-13 10:21:16,915 - CRITICAL - This is critical.
+2026-08-13 11:19:11,731 - DEBUG - This is debug.
+2026-08-13 11:19:11,732 - INFO - This is info.
+2026-08-13 11:19:11,732 - WARNING - This is warning.
+2026-08-13 11:19:11,732 - ERROR - This is error.
+2026-08-13 11:19:11,732 - CRITICAL - This is critical.
+2026-08-13 11:19:11,732 - INFO - Application started
+2026-08-13 11:19:11,732 - ERROR - Something went wrong
+2026-08-13 11:31:58,537 - DEBUG - This is debug.
+2026-08-13 11:31:58,538 - INFO - This is info.
+2026-08-13 11:31:58,538 - WARNING - This is warning.
+2026-08-13 11:31:58,538 - ERROR - This is error.
+2026-08-13 11:31:58,538 - CRITICAL - This is critical.
+2026-08-13 11:31:58,538 - INFO - Application started
+2026-08-13 11:31:58,538 - ERROR - Something went wrong
